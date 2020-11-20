@@ -7,7 +7,8 @@
   "license": "MIT",
   "scripts": {
     "build_schema": "(echo 'export default' && ./node_modules/ts-json-schema-generator/bin/ts-json-schema-generator --path 'src/types.ts' --type Digitaljs) > src/schema.ts",
-    "build": "yarn run build_schema && tsc"
+    "build": "yarn run build_schema && tsc",
+    "prepublish": "yarn build"
   },
   "files": [
     "build/**/*.js",
