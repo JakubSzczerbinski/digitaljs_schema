@@ -55,10 +55,26 @@ export default
             "label": {
               "type": "string"
             },
-            "net": {
-              "type": "string"
-            },
             "order": {
+              "type": "number"
+            },
+            "position": {
+              "additionalProperties": false,
+              "properties": {
+                "x": {
+                  "type": "number"
+                },
+                "y": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "x",
+                "y"
+              ],
+              "type": "object"
+            },
+            "propagation": {
               "type": "number"
             },
             "type": {
@@ -84,10 +100,26 @@ export default
             "label": {
               "type": "string"
             },
-            "net": {
-              "type": "string"
-            },
             "order": {
+              "type": "number"
+            },
+            "position": {
+              "additionalProperties": false,
+              "properties": {
+                "x": {
+                  "type": "number"
+                },
+                "y": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "x",
+                "y"
+              ],
+              "type": "object"
+            },
+            "propagation": {
               "type": "number"
             },
             "type": {
@@ -117,10 +149,26 @@ export default
             "label": {
               "type": "string"
             },
-            "net": {
-              "type": "string"
-            },
             "order": {
+              "type": "number"
+            },
+            "position": {
+              "additionalProperties": false,
+              "properties": {
+                "x": {
+                  "type": "number"
+                },
+                "y": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "x",
+                "y"
+              ],
+              "type": "object"
+            },
+            "propagation": {
               "type": "number"
             },
             "type": {
@@ -170,10 +218,26 @@ export default
             "label": {
               "type": "string"
             },
-            "net": {
-              "type": "string"
-            },
             "order": {
+              "type": "number"
+            },
+            "position": {
+              "additionalProperties": false,
+              "properties": {
+                "x": {
+                  "type": "number"
+                },
+                "y": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "x",
+                "y"
+              ],
+              "type": "object"
+            },
+            "propagation": {
               "type": "number"
             },
             "signed": {
@@ -234,10 +298,26 @@ export default
             "label": {
               "type": "string"
             },
-            "net": {
-              "type": "string"
-            },
             "order": {
+              "type": "number"
+            },
+            "position": {
+              "additionalProperties": false,
+              "properties": {
+                "x": {
+                  "type": "number"
+                },
+                "y": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "x",
+                "y"
+              ],
+              "type": "object"
+            },
+            "propagation": {
               "type": "number"
             },
             "signed": {
@@ -284,10 +364,26 @@ export default
             "label": {
               "type": "string"
             },
-            "net": {
-              "type": "string"
-            },
             "order": {
+              "type": "number"
+            },
+            "position": {
+              "additionalProperties": false,
+              "properties": {
+                "x": {
+                  "type": "number"
+                },
+                "y": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "x",
+                "y"
+              ],
+              "type": "object"
+            },
+            "propagation": {
               "type": "number"
             },
             "type": {
@@ -323,10 +419,26 @@ export default
             "label": {
               "type": "string"
             },
-            "net": {
-              "type": "string"
-            },
             "order": {
+              "type": "number"
+            },
+            "position": {
+              "additionalProperties": false,
+              "properties": {
+                "x": {
+                  "type": "number"
+                },
+                "y": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "x",
+                "y"
+              ],
+              "type": "object"
+            },
+            "propagation": {
               "type": "number"
             },
             "signed": {
@@ -373,10 +485,26 @@ export default
             "label": {
               "type": "string"
             },
-            "net": {
-              "type": "string"
-            },
             "order": {
+              "type": "number"
+            },
+            "position": {
+              "additionalProperties": false,
+              "properties": {
+                "x": {
+                  "type": "number"
+                },
+                "y": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "x",
+                "y"
+              ],
+              "type": "object"
+            },
+            "propagation": {
               "type": "number"
             },
             "signed": {
@@ -436,10 +564,26 @@ export default
             "label": {
               "type": "string"
             },
-            "net": {
-              "type": "string"
-            },
             "order": {
+              "type": "number"
+            },
+            "position": {
+              "additionalProperties": false,
+              "properties": {
+                "x": {
+                  "type": "number"
+                },
+                "y": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "x",
+                "y"
+              ],
+              "type": "object"
+            },
+            "propagation": {
               "type": "number"
             },
             "type": {
@@ -475,10 +619,26 @@ export default
             "label": {
               "type": "string"
             },
-            "net": {
-              "type": "string"
-            },
             "order": {
+              "type": "number"
+            },
+            "position": {
+              "additionalProperties": false,
+              "properties": {
+                "x": {
+                  "type": "number"
+                },
+                "y": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "x",
+                "y"
+              ],
+              "type": "object"
+            },
+            "propagation": {
               "type": "number"
             },
             "type": {
@@ -504,9 +664,6 @@ export default
             "label": {
               "type": "string"
             },
-            "net": {
-              "type": "string"
-            },
             "order": {
               "type": "number"
             },
@@ -524,6 +681,25 @@ export default
                 }
               },
               "type": "object"
+            },
+            "position": {
+              "additionalProperties": false,
+              "properties": {
+                "x": {
+                  "type": "number"
+                },
+                "y": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "x",
+                "y"
+              ],
+              "type": "object"
+            },
+            "propagation": {
+              "type": "number"
             },
             "type": {
               "const": "Dff",
@@ -549,13 +725,29 @@ export default
             "label": {
               "type": "string"
             },
-            "net": {
-              "type": "string"
-            },
             "offset": {
               "type": "number"
             },
             "order": {
+              "type": "number"
+            },
+            "position": {
+              "additionalProperties": false,
+              "properties": {
+                "x": {
+                  "type": "number"
+                },
+                "y": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "x",
+                "y"
+              ],
+              "type": "object"
+            },
+            "propagation": {
               "type": "number"
             },
             "rdports": {
@@ -620,11 +812,24 @@ export default
             "label": {
               "type": "string"
             },
-            "net": {
-              "type": "string"
-            },
             "order": {
               "type": "number"
+            },
+            "position": {
+              "additionalProperties": false,
+              "properties": {
+                "x": {
+                  "type": "number"
+                },
+                "y": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "x",
+                "y"
+              ],
+              "type": "object"
             },
             "propagation": {
               "type": "number"
@@ -649,10 +854,26 @@ export default
             "label": {
               "type": "string"
             },
-            "net": {
-              "type": "string"
-            },
             "order": {
+              "type": "number"
+            },
+            "position": {
+              "additionalProperties": false,
+              "properties": {
+                "x": {
+                  "type": "number"
+                },
+                "y": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "x",
+                "y"
+              ],
+              "type": "object"
+            },
+            "propagation": {
               "type": "number"
             },
             "type": {
@@ -675,10 +896,26 @@ export default
             "label": {
               "type": "string"
             },
-            "net": {
-              "type": "string"
-            },
             "order": {
+              "type": "number"
+            },
+            "position": {
+              "additionalProperties": false,
+              "properties": {
+                "x": {
+                  "type": "number"
+                },
+                "y": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "x",
+                "y"
+              ],
+              "type": "object"
+            },
+            "propagation": {
               "type": "number"
             },
             "type": {
@@ -700,13 +937,29 @@ export default
             "label": {
               "type": "string"
             },
-            "net": {
-              "type": "string"
-            },
             "numbase": {
               "type": "string"
             },
             "order": {
+              "type": "number"
+            },
+            "position": {
+              "additionalProperties": false,
+              "properties": {
+                "x": {
+                  "type": "number"
+                },
+                "y": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "x",
+                "y"
+              ],
+              "type": "object"
+            },
+            "propagation": {
               "type": "number"
             },
             "type": {
@@ -729,13 +982,29 @@ export default
             "label": {
               "type": "string"
             },
-            "net": {
-              "type": "string"
-            },
             "numbase": {
               "type": "string"
             },
             "order": {
+              "type": "number"
+            },
+            "position": {
+              "additionalProperties": false,
+              "properties": {
+                "x": {
+                  "type": "number"
+                },
+                "y": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "x",
+                "y"
+              ],
+              "type": "object"
+            },
+            "propagation": {
               "type": "number"
             },
             "type": {
@@ -764,6 +1033,25 @@ export default
             "order": {
               "type": "number"
             },
+            "position": {
+              "additionalProperties": false,
+              "properties": {
+                "x": {
+                  "type": "number"
+                },
+                "y": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "x",
+                "y"
+              ],
+              "type": "object"
+            },
+            "propagation": {
+              "type": "number"
+            },
             "type": {
               "const": "Input",
               "type": "string"
@@ -771,6 +1059,7 @@ export default
           },
           "required": [
             "bits",
+            "net",
             "type"
           ],
           "type": "object"
@@ -790,6 +1079,25 @@ export default
             "order": {
               "type": "number"
             },
+            "position": {
+              "additionalProperties": false,
+              "properties": {
+                "x": {
+                  "type": "number"
+                },
+                "y": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "x",
+                "y"
+              ],
+              "type": "object"
+            },
+            "propagation": {
+              "type": "number"
+            },
             "type": {
               "const": "Output",
               "type": "string"
@@ -797,6 +1105,7 @@ export default
           },
           "required": [
             "bits",
+            "net",
             "type"
           ],
           "type": "object"
@@ -813,10 +1122,26 @@ export default
             "label": {
               "type": "string"
             },
-            "net": {
-              "type": "string"
-            },
             "order": {
+              "type": "number"
+            },
+            "position": {
+              "additionalProperties": false,
+              "properties": {
+                "x": {
+                  "type": "number"
+                },
+                "y": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "x",
+                "y"
+              ],
+              "type": "object"
+            },
+            "propagation": {
               "type": "number"
             },
             "type": {
@@ -842,10 +1167,26 @@ export default
             "label": {
               "type": "string"
             },
-            "net": {
-              "type": "string"
-            },
             "order": {
+              "type": "number"
+            },
+            "position": {
+              "additionalProperties": false,
+              "properties": {
+                "x": {
+                  "type": "number"
+                },
+                "y": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "x",
+                "y"
+              ],
+              "type": "object"
+            },
+            "propagation": {
               "type": "number"
             },
             "type": {
@@ -865,10 +1206,26 @@ export default
             "label": {
               "type": "string"
             },
-            "net": {
-              "type": "string"
-            },
             "order": {
+              "type": "number"
+            },
+            "position": {
+              "additionalProperties": false,
+              "properties": {
+                "x": {
+                  "type": "number"
+                },
+                "y": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "x",
+                "y"
+              ],
+              "type": "object"
+            },
+            "propagation": {
               "type": "number"
             },
             "slice": {
@@ -924,10 +1281,26 @@ export default
             "label": {
               "type": "string"
             },
-            "net": {
-              "type": "string"
-            },
             "order": {
+              "type": "number"
+            },
+            "position": {
+              "additionalProperties": false,
+              "properties": {
+                "x": {
+                  "type": "number"
+                },
+                "y": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "x",
+                "y"
+              ],
+              "type": "object"
+            },
+            "propagation": {
               "type": "number"
             },
             "type": {
@@ -953,10 +1326,26 @@ export default
             "label": {
               "type": "string"
             },
-            "net": {
-              "type": "string"
-            },
             "order": {
+              "type": "number"
+            },
+            "position": {
+              "additionalProperties": false,
+              "properties": {
+                "x": {
+                  "type": "number"
+                },
+                "y": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "x",
+                "y"
+              ],
+              "type": "object"
+            },
+            "propagation": {
               "type": "number"
             },
             "type": {
@@ -998,10 +1387,26 @@ export default
             "label": {
               "type": "string"
             },
-            "net": {
-              "type": "string"
-            },
             "order": {
+              "type": "number"
+            },
+            "position": {
+              "additionalProperties": false,
+              "properties": {
+                "x": {
+                  "type": "number"
+                },
+                "y": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "x",
+                "y"
+              ],
+              "type": "object"
+            },
+            "propagation": {
               "type": "number"
             },
             "states": {

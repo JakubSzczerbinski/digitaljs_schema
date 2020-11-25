@@ -1,5 +1,4 @@
-
-export type ObjMap<T> = { [key : string] : T }
+import { ObjMap } from "./utils"
 
 export type UnaryGate = {
   type: "Not" | "Repeater",
@@ -147,11 +146,13 @@ export type NumDisplay = {
 export type Input = {
   type: "Input",
   bits: number,
+  net: string
 }
 
 export type Output = {
   type: "Output",
   bits: number,
+  net: string
 }
 
 export type BusGroup = {
@@ -231,8 +232,12 @@ export type Device =
   FSM) & {
     // Seems that this is optional, yosys "Constant" doesn't include label
     label?: string,
-    net?: string,
     order?: number,
+    propagation?: number,
+    position?: {
+      x: number,
+      y: number
+    } 
   }
 
 export interface Plug {

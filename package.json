@@ -6,9 +6,9 @@
   "author": "Jakub Szczerbiński",
   "license": "MIT",
   "scripts": {
-    "build_schema": "(echo 'export default' && ./node_modules/ts-json-schema-generator/bin/ts-json-schema-generator --path 'src/types.ts' --type Digitaljs) > src/schema.ts",
-    "build": "yarn run build_schema && tsc",
-    "prepublish": "yarn build"
+    "build": "make build",
+    "prepublish": "yarn build",
+    "test": "make test"
   },
   "files": [
     "build/**/*.js",
@@ -19,6 +19,7 @@
   },
   "devDependencies": {
     "@types/ajv": "^1.0.0",
+    "@types/node": "^14.14.9",
     "ts-json-schema-generator": "^0.78.0",
     "ts-node": "^9.0.0",
     "typescript": "^4.1.2"
