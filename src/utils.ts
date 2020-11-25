@@ -24,3 +24,7 @@ export function flatMap<T, S>(x : ObjMap<T>, f : (key : string, val : T) => Arra
     }
     return result;
 }
+
+export function concat<T>(a : Array<T>, b : Array<T>) : Array<T> {
+    return a.concat(b);
+}

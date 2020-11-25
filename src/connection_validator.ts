@@ -576,15 +576,13 @@ export const checkConnections = (djs : Digitaljs, verbose: boolean) : boolean =>
                   `Multiple connectors plugged into ${conn.to.id}:${conn.to.port}. ` +
                   `(${conn.from.id}:${conn.from.port} -> ${conn.to.id}:${conn.to.port}) is one of them.`)
             
-            if (port_users.length < 1)
-              return [
-                `${dev_name}:${port_name} input is not used.`
-              ];
+            if (port_users.length < 1 && verbose)
+              console.error(`WARN ${dev_name}:${port_name} input is not used.`)
 
             return [];
           })
       );
-      
+
       return invalidConnectionErrors.concat(missingConnectionsErrors);
     }
 
