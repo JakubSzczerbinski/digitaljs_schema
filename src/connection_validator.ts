@@ -320,9 +320,19 @@ const ioOfDevice = (dev : Device, subcircuit_ios : ObjMap<IO>) : IO => {
     }
 
     // Input
+    case "Input":
+      return {
+        outputs: [
+          {
+            name: "out",
+            bits: dev.bits
+          }
+        ],
+        inputs: []
+      }
+
     // Clock
     // Button
-    case "Input":
     case "Clock":
     case "Button":
       return {
@@ -336,8 +346,18 @@ const ioOfDevice = (dev : Device, subcircuit_ios : ObjMap<IO>) : IO => {
       }
 
     // Output
-    // Lamp
     case "Output":
+      return {
+        outputs: [],
+        inputs: [
+          {
+            name: "in",
+            bits: dev.bits
+          }
+        ]
+      }
+
+    // Lamp
     case "Lamp":
       return {
         outputs: [],
