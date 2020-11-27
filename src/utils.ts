@@ -1,6 +1,12 @@
 
 export type ObjMap<T> = { [key : string] : T }
-export const range = (i : number) : Array<number> => Array(i).map((v, i) => i)
+export const range = (n : number) : Array<number> => {
+    const result : Array<number> = [];
+    for (let i = 0; i < n; i++) {
+        result.push(i);
+    }
+    return result;
+}
 
 export function map<T, S>(x : ObjMap<T>, f : (key : string, val : T) => S) : ObjMap<S> 
 {

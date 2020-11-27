@@ -1,4 +1,3 @@
-import { BigIntStats } from "fs";
 import { Circuit, Connector, Device, Digitaljs, Input, Output, Plug } from "./types";
 import { flatMap, map, ObjMap, range } from "./utils";
 
@@ -24,7 +23,7 @@ type ConnErrors = {
 
 const ioOfDevice = (dev : Device, subcircuit_ios : ObjMap<IO>) : IO => {
   const Ninputs = (n : number, bits : number) : Array<In> => {
-    const inputNames = range(n).map(n => "in" + n);
+    const inputNames = range(n).map(n => `in${n}`);
     const inputs = inputNames.map((name : string) : In => ({
       name,
       bits
@@ -621,7 +620,7 @@ export const checkConnections = (djs : Digitaljs, verbose: boolean) : boolean =>
     }
 
     if (verbose) {
-      errors.forEach(err => console.error(err));
+      errors.forEach(err => console.error(`ERROR ${err}`));
     }
 
     return false;
