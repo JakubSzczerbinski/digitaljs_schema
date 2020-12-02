@@ -6,7 +6,7 @@
   "author": "Jakub Szczerbiński",
   "license": "MIT",
   "scripts": {
-    "build": "make build",
+    "build": "make build_all",
     "prepublish": "yarn build",
     "test": "make test"
   },
