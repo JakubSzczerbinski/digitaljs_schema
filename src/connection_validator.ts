@@ -289,7 +289,7 @@ const ioOfDevice = (dev : Device, subcircuit_ios : ObjMap<IO>) : IO => {
         ))
       ).reduce((a, b) => a.concat(b), [])
 
-      const wrPortsIn : Array<In> = dev.rdports.map(
+      const wrPortsIn : Array<In> = dev.wrports.map(
         (wrPort, i) : Array<In> => ([
           {
             name: `wr${i}addr`,
@@ -314,7 +314,7 @@ const ioOfDevice = (dev : Device, subcircuit_ios : ObjMap<IO>) : IO => {
 
       return {
         outputs: rdPortsOut,
-        inputs: rdPortsIn.concat(rdPortsOut)
+        inputs: wrPortsIn.concat(rdPortsIn)
       }
     }
 

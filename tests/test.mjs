@@ -13,6 +13,7 @@ import multiple_connectors_to_one_input from './circuits/multiple_connectors_to_
 import use_output from './circuits/use_output.mjs';
 import orr_block from './circuits/orr_block.mjs';
 import gcd from './circuits/gcd.mjs';
+import memory from './circuits/memory_with_contents.mjs';
 
 // Should fail
 assert(!checkConnections(asDigitaljs(bad_connection), true))
@@ -26,3 +27,4 @@ assert(checkConnections(asDigitaljs(fulladder), true))
 assert(checkConnections(asDigitaljs(lfsr), true));
 assert(checkConnections(asDigitaljs(orr_block), true));
 assert(checkConnections(asDigitaljs(gcd), true));
+assert(checkConnections(asDigitaljs(memory), true))
