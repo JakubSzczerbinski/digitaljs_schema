@@ -23,9 +23,9 @@ export type BitShift = {
     out: number
   },
   signed: {
-    in1: number,
-    in2: number,
-    out: number,
+    in1: boolean,
+    in2: boolean,
+    out: boolean,
   }
   fillx: boolean
 }
@@ -110,7 +110,8 @@ export type Memory = {
   wrports: Array<{
     enable_polarity?: boolean,
     clock_polarity?: boolean,
-  }>
+  }>,
+  memdata?: Array<string>
 }
 
 export type Clock = {
