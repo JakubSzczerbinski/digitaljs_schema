@@ -147,13 +147,15 @@ export type NumDisplay = {
 export type Input = {
   type: "Input",
   bits: number,
-  net: string
+  net: string,
+  signed?: boolean
 }
 
 export type Output = {
   type: "Output",
   bits: number,
-  net: string
+  net: string,
+  signed?: boolean
 }
 
 export type BusGroup = {
